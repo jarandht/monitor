@@ -1,0 +1,282 @@
+[
+  {
+    "ip": "192.168.229.12",
+    "device": "KM_C3350i Tinghus 2 1etg Forvaltningskontoret",
+    "description": "",
+    "device_description": "Tinghus 2 1etg Forvaltningskontoret | C3350i - A93E021270961",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.229.17",
+    "device": "KM_C650i Vetleflaten Heimetjenesta",
+    "description": "bluh",
+    "device_description": "Vetleflaten Heimetjenesta | C650i - AA7N027002374",
+    "status": "success"
+  },
+  {
+    "ip": "10.0.0.101",
+    "device": "Cisco_Router_Lobby",
+    "description": "Main entrance router",
+    "device_description": "Lobby | Cisco ISR4451-X - FTX1234X1AB",
+    "status": "failed"
+  },
+  {
+    "ip": "10.0.0.102",
+    "device": "HP_Switch_2ndFloor",
+    "description": "Distribution switch",
+    "device_description": "2nd Floor | HP 1920-24G - CN12345ABC",
+    "status": "success"
+  },
+  {
+    "ip": "10.0.0.103",
+    "device": "Ubiquiti_AP_OfficeA",
+    "description": "WiFi AP",
+    "device_description": "Office A | Ubiquiti UAP-AC-Pro - 782A87AB1234",
+    "status": "success"
+  },
+  {
+    "ip": "10.0.0.104",
+    "device": "Fortinet_Firewall_Main",
+    "description": "Core firewall",
+    "device_description": "Data Center | FortiGate 100F - FG100FTK21000123",
+    "status": "failed"
+  },
+  {
+    "ip": "10.0.0.105",
+    "device": "Synology_NAS_Backup",
+    "description": "Nightly backup NAS",
+    "device_description": "Server Room | DS1821+ - SYNO2023BK01",
+    "status": "success"
+  },
+  {
+    "ip": "10.0.0.106",
+    "device": "Brother_Printer_Lab",
+    "description": "Biology Lab Printer",
+    "device_description": "Bio Lab | HL-L8360CDW - BR123LAB456",
+    "status": "failed"
+  },
+  {
+    "ip": "10.0.0.107",
+    "device": "Netgear_Switch_Storage",
+    "description": "Connected to SAN",
+    "device_description": "Storage Rack | Netgear GS108Ev3 - NGSR2021X",
+    "status": "success"
+  },
+  {
+    "ip": "10.0.0.108",
+    "device": "AP_Library_Zone1",
+    "description": "Library WiFi",
+    "device_description": "Library | Aruba AP-505 - ARU123LIB01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.0.0.109",
+    "device": "Cisco_Switch_3rdFloor",
+    "description": "Access switch",
+    "device_description": "3rd Floor | Cisco C9200 - FDO1234ABC",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.1.20",
+    "device": "Polycom_ConfPhone",
+    "description": "Meeting room phone",
+    "device_description": "Conference Room 1 | Polycom Trio 8800 - POLCONF001",
+    "status": "failed"
+  },
+  {
+    "ip": "192.168.1.21",
+    "device": "Zyxel_Gateway_Entrance",
+    "description": "Main gateway",
+    "device_description": "Entrance Hall | Zyxel USG FLEX 200 - ZYX001GATE",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.1.22",
+    "device": "Canon_MFP_Admin",
+    "description": "Admin office printer",
+    "device_description": "Admin Office | Canon iR-ADV C5535 - CNM1234X",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.1.23",
+    "device": "AP_Gym_1",
+    "description": "Gym WiFi",
+    "device_description": "Gym | TP-Link EAP225 - TP123GYM",
+    "status": "failed"
+  },
+  {
+    "ip": "172.16.0.10",
+    "device": "Dell_Server_Prod01",
+    "description": "Production server",
+    "device_description": "Data Center | Dell R740 - DELLR740X001",
+    "status": "success"
+  },
+  {
+    "ip": "172.16.0.11",
+    "device": "Juniper_Switch_Room3",
+    "description": "IDF Room 3",
+    "device_description": "Room 3 | Juniper EX4300 - JNP123IDF",
+    "status": "failed"
+  },
+  {
+    "ip": "172.16.0.12",
+    "device": "Panasonic_Camera_Gate",
+    "description": "Gate surveillance",
+    "device_description": "Gate | WV-S1132 - PAN123GATE",
+    "status": "success"
+  },
+  {
+    "ip": "172.16.0.13",
+    "device": "Printer_Lounge_HP500",
+    "description": "Lounge printer",
+    "device_description": "Staff Lounge | HP LaserJet M507 - HPLJ50001",
+    "status": "failed"
+  },
+  {
+    "ip": "10.10.1.50",
+    "device": "Switch_Floor5",
+    "description": "5th floor switch",
+    "device_description": "Floor 5 | D-Link DGS-1210 - DLINK005",
+    "status": "success"
+  },
+  {
+    "ip": "10.10.1.51",
+    "device": "Meraki_AP_Studio",
+    "description": "Studio wireless",
+    "device_description": "Studio Room | Meraki MR46 - MRSTUDIO01",
+    "status": "success"
+  },
+  {
+    "ip": "10.10.1.52",
+    "device": "Printer_Warehouse",
+    "description": "Thermal printer",
+    "device_description": "Warehouse | Zebra ZT230 - ZEBRAWH01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.10.1.53",
+    "device": "Firewall_Branch1",
+    "description": "Remote branch",
+    "device_description": "Branch 1 | SonicWall TZ400 - SWBR001",
+    "status": "failed"
+  },
+  {
+    "ip": "10.10.1.54",
+    "device": "Unifi_Switch_Main",
+    "description": "Core Unifi switch",
+    "device_description": "Main Rack | Unifi USW-24-Pro - UNISW001",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.100.1",
+    "device": "Checkpoint_FW_DMZ",
+    "description": "Firewall for DMZ",
+    "device_description": "DMZ Zone | Check Point 6200 - CP6200X1",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.100.2",
+    "device": "UPS_ServerRoom",
+    "description": "Backup power",
+    "device_description": "Server Room | APC SmartUPS 1500 - APCSMRT01",
+    "status": "failed"
+  },
+  {
+    "ip": "192.168.100.3",
+    "device": "Axis_Camera_Entrance",
+    "description": "Front entrance camera",
+    "device_description": "Entrance | Axis M3116-LVE - AXISENTR01",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.100.4",
+    "device": "MikroTik_Router_Core",
+    "description": "Core router",
+    "device_description": "Core Network | MikroTik CCR1036 - MTCORE01",
+    "status": "success"
+  },
+  {
+    "ip": "192.168.100.5",
+    "device": "Lenovo_NAS_Media",
+    "description": "Multimedia NAS",
+    "device_description": "Media Dept | Lenovo Iomega ix4 - LENNAS001",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.10",
+    "device": "Switch_IT_Closet",
+    "description": "IT closet switch",
+    "device_description": "Closet A | Cisco SG350 - CISSG001",
+    "status": "success"
+  },
+  {
+    "ip": "10.5.5.11",
+    "device": "Kyocera_MFP_Legal",
+    "description": "Legal dept printer",
+    "device_description": "Legal Office | Kyocera TASKalfa 3253ci - KYOLEGAL01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.12",
+    "device": "WiFi_Cafeteria",
+    "description": "Cafeteria AP",
+    "device_description": "Cafeteria | Aruba Instant IAP-305 - ARUCAF01",
+    "status": "success"
+  },
+  {
+    "ip": "10.5.5.13",
+    "device": "QNAP_NAS_Design",
+    "description": "Design dept NAS",
+    "device_description": "Design | QNAP TS-431X - QNAPDES01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.14",
+    "device": "CoreSwitch_BuildingA",
+    "description": "Core switch A",
+    "device_description": "Building A | Cisco Nexus 9300 - CISNX93001",
+    "status": "success"
+  },
+  {
+    "ip": "10.5.5.15",
+    "device": "VoIP_Phone_RoomB1",
+    "description": "Basement phone",
+    "device_description": "Room B1 | Yealink SIP-T54W - YLINKB1",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.11",
+    "device": "",
+    "description": "Legal dept printer",
+    "device_description": "Legal Office | Kyocera TASKalfa 3253ci - KYOLEGAL01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.12",
+    "device": "",
+    "description": "Cafeteria AP",
+    "device_description": "Cafeteria | Aruba Instant IAP-305 - ARUCAF01",
+    "status": "success"
+  },
+  {
+    "ip": "10.5.5.13",
+    "device": "",
+    "description": "Design dept NAS",
+    "device_description": "Design | QNAP TS-431X - QNAPDES01",
+    "status": "failed"
+  },
+  {
+    "ip": "10.5.5.14",
+    "device": "",
+    "description": "Core switch A",
+    "device_description": "Building A | Cisco Nexus 9300 - CISNX93001",
+    "status": "success"
+  },
+  {
+    "ip": "10.5.5.15",
+    "device": "",
+    "description": "Basement phone",
+    "device_description": "Room B1 | Yealink SIP-T54W - YLINKB1",
+    "status": "failed"
+  }
+]

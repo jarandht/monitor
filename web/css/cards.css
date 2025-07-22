@@ -1,0 +1,72 @@
+.cardsContainer{
+}
+
+.deviceGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: start;
+    justify-content: start;
+    flex-basis: auto;
+    flex-shrink: 3;
+    gap: 10px;
+}
+
+.cardsContainer h2{
+    color: var(--light00);
+    font-size: 30px;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--light20);
+}
+
+.deviceCard{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0px var(--light10) !important;
+    background-color: var(--dark30);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: .3s;
+}
+
+.deviceDivTextContent{
+    padding: 5px;
+}
+
+/* .deviceCard:hover {
+    box-shadow: 0 0 0px 1px var(--light10) !important;
+    background-color: var(--dark20);
+} */
+
+.cardsContainer span {
+    padding: 20px;
+}
+
+.cardsContainer h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: var(--light00);
+    border-bottom: 1px solid var(--light20);
+}
+
+.cardsContainer p {
+    color: var(--light00);
+}
+
+.statusIndicator {
+    width: 6px;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.status-success {
+    background-color: #4CAF50; /* green */
+}
+.status-failed {
+    background-color: #f44336; /* red */
+}
+.status-unknown {
+    background-color: #9E9E9E; /* grey */
+}
