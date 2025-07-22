@@ -2,7 +2,7 @@
 
 netbox_api_fetch_interval="${netbox_api_fetch_interval:-2400}"
 ping_interval="${ping_interval:-60}"
-date_time=$(date +%Y-%m-%d_%H:%M)
+date_time=$(date "+[%a %b %d %H:%M:%S %Y]")
 
 echo "Startup initialized"
 

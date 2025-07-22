@@ -12,7 +12,7 @@ curl -s -H "Authorization: Token ${netbox_api_token}" "${netbox_url}/api/ipam/ip
           elif .assigned_object.virtual_machine != null then
             .assigned_object.virtual_machine.name
           else
-            "unknown"
+            ""
           end
         ),
         device_description: (
@@ -24,8 +24,7 @@ curl -s -H "Authorization: Token ${netbox_api_token}" "${netbox_url}/api/ipam/ip
             ""
           end
         ),
-        description: .description,
-        status: "unknown"
+        description: .description
       }
   ]
 ' > /app/ips.json

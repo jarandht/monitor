@@ -1,9 +1,10 @@
 #!/bin/bash
 
 Netbox_data="/app/ips.json"
-Tmp_File_Output_data="/app/web/json/home.json"
+Tmp_file_output_data="/app/tmp.json"
 Output_data="/app/web/json/home.json"
-date_time=$(date +%Y-%m-%d_%H:%M)
+date_time=$(date "+[%a %b %d %H:%M:%S %Y]"
+)
 
 updated_entries=()
 
@@ -38,6 +39,6 @@ while IFS= read -r entry; do
 done < <(jq -c '.[]' "$Netbox_data")
 
 # Output entire array to the temp file as valid JSON
-jq -s '.' <<< "${updated_entries[@]}" > "$Tmp_File_Output_data"
+jq -s '.' <<< "${updated_entries[@]}" > "$Tmp_file_output_data"
 
-mv "$Tmp_File_Output_data" "$Output_data"
+mv "$Tmp_file_output_data" "$Output_data"

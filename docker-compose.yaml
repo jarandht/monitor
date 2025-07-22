@@ -1,7 +1,7 @@
 services:
   apache:
     image: monitor
-    container_name: jarand.site
+    container_name: monitor
     ports:
       - '8020:8080'
     restart: always 
@@ -11,3 +11,9 @@ services:
       - netbox_api_token=83f90a020da792b9e2e74dc3a84150499b8b2389
       - netbox_url=https://netbox.adm.voss.kommune.no
       - cert=-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----
+      - header_title=Voss Herad Status
+      - header_img=img/egg500.png
+      - title=bluh
+      - img=/img/egg501.png
+      - web_refresh=60
+

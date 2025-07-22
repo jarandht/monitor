@@ -1,7 +1,7 @@
 services:
-  apache:
+  monitor-dev:
     image: php:8.0-apache   
-    container_name: jarand.site
+    container_name: monitor-dev
     ports:
       - '8010:80'
     restart: always
