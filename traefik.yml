@@ -1,0 +1,74 @@
+api:
+  dashboard: false
+  debug: false
+
+entryPoints:
+  http:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: https
+          scheme: https
+
+  https:
+    address: ":443"
+
+log:
+ level: ERROR
+accesslog:
+  format: common
+  filePath: /var/log/traefik/access.log
+
+tls:
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /certs/cert.pem
+        keyFile: /certs/key.pem
+
+http:
+  routers:
+    notes:
+      entryPoints:
+        - "https"
+      rule: "Host(`monitor`)"
+      middlewares:
+        - default-headers
+        - auth
+        - whitelist
+      service: notes
+
+  services:
+    notes:
+      loadBalancer:
+        servers:
+          - url: "http://monitor:8080"
+
+  middlewares:
+    withelist:
+      ipWhiteList:
+        sourceRange:
+          - "X.X.X.X/32"
+    auth:
+      basicAuth:
+        users:
+          - "infoskjerm:$apr1$H6uskkkW$IgXLP6ewTrSuBkTrqE8wj/"
+
+    default-headers:
+      headers:
+        frameDeny: true
+        browserXssFilter: true
+        contentTypeNosniff: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 15552000
+        customFrameOptionsValue: SAMEORIGIN
+        customRequestHeaders:
+          X-Forwarded-Proto: https
+
+    ip-whitelist:
+      ipWhiteList:
+        sourceRange:
+        - "X.X.X.X/X"

@@ -13,10 +13,10 @@
                 >
             </span>
         </div>
-        <div class="navButtons" id="navButtons">
+        <!-- <div class="navButtons" id="navButtons">
             <a href="/home"><div><img src="/img/nav_icons/homegrey.png" alt=""><p>All</p></div></a>
             <a href="/ping"><div><img src="/img/nav_icons/homegrey.png" alt=""><p>Ping</p></div></a>
             <a href="/web"><div><img src="/img/nav_icons/homegrey.png" alt=""><p>Web</p></div></a>
-        </div>
+        </div> -->
     </section>
 </nav>

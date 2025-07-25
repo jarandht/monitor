@@ -1,5 +1,20 @@
 services:
-  apache:
+  traefik:
+      image: traefik:v3.1.7
+      container_name: traefik
+      restart: always
+      networks:
+        proxy:
+      ports:
+        - 80:80
+        - 443:443
+      volumes:
+        - ./log:/var/log/traefik
+        - /etc/localtime:/etc/localtime:ro
+        - ./traefik.yml:/traefik.yml:ro
+        - ./cert.pem:/certs/cert.pem
+        - ./key.pem:/certs/key.pem
+  monitor:
     image: monitor
     container_name: monitor
     ports:
@@ -16,3 +31,8 @@ services:
       - title=bluh
       - img=/img/egg501.png
       - web_refresh=60
+    networks:
+      proxy:
+
+networks:
+  proxy:
